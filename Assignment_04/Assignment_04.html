@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_04</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".header").click(function () {
+        $(this).css("background-color", "purple");
+      });
+      $(".sidebar").click(function () {
+        $(this).text("Leftbar");
+      });
+      $(".extra").click(function () {
+        $(".main").fadeOut();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main Content</div>
+    <div class="extra">Extra Content</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>
