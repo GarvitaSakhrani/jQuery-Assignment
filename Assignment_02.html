@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_02</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #clickable {
+      padding: 5px;
+      text-align: center;
+      background-color: #E5EECC;
+      border: 1px solid #c3c3c3;
+    }
+
+    #slider {
+      text-align: center;
+      padding: 60px;
+      background-color: #DFEDFF;
+      border: 1px solid #c3c3c3;
+      display: none;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $("#clickable").click(function () {
+        $("#slider").slideDown();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div id="clickable">Click me to slide down panel</div>
+  <div id="slider">Hello World!</div>
+</body>
+
+</html>
