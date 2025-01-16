@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_05</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".footer").click(function () {
+        $(".popup_background").fadeIn();
+      });
+
+      $(".cross").click(function () {
+        $(".popup_background").fadeOut();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main Content</div>
+    <div class="extra">Extra Content</div>
+    <div class="footer">Footer</div>
+  </div>
+  <div class="popup_background">
+    <div class="popup">
+      <p>I am popup</p>
+      <span class="cross">&#x2716;</span>
+    </div>
+  </div>
+</body>
+
+</html>
